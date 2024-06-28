@@ -1,15 +1,17 @@
-package com.wildcodeschool.myProject.Controller;
+package com.wildcodeschool.doctor.controller;
 
+import com.wildcodeschool.doctor.model.Doctor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class MainController {
+public class DoctorController {
 
-    @GetMapping("/greetings")
+    @GetMapping("/doctor/")
     @ResponseBody
-    public String index() {
-        return "Greetings from Spring Boot!";
+    public Doctor doctor() {
+
+        return null;
     }
 }
